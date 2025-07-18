@@ -1,0 +1,36 @@
+{
+  "2025-06": {
+    "download": {
+      "status": "completed",
+      "timestamp": "2025-07-18T11:10:30.402046",
+      "details": "Download successful"
+    },
+    "parsing": {
+      "status": "completed",
+      "timestamp": "2025-07-18T11:10:39.222470",
+      "details": "Parsing successful. Generated: 1 CSV, 1 ZIP"
+    },
+    "complete": {
+      "status": "success",
+      "timestamp": "2025-07-18T11:10:41.227001",
+      "details": "Full pipeline completed in 91.8 seconds"
+    }
+  },
+  "2025-05": {
+    "download": {
+      "status": "completed",
+      "timestamp": "2025-07-18T11:20:06.501904",
+      "details": "Download successful"
+    },
+    "parsing": {
+      "status": "completed",
+      "timestamp": "2025-07-18T11:20:12.989146",
+      "details": "Parsing successful. Generated: 1 CSV, 1 ZIP"
+    },
+    "complete": {
+      "status": "success",
+      "timestamp": "2025-07-18T11:20:14.997237",
+      "details": "Full pipeline completed in 84.3 seconds"
+    }
+  }
+}

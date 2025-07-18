@@ -1,0 +1,63 @@
+2025-07-18 11:09:09,437 - INFO - ============================================================
+2025-07-18 11:09:09,437 - INFO - JPX Master Data Processor Initialized
+2025-07-18 11:09:09,438 - INFO - ============================================================
+2025-07-18 11:09:09,438 - INFO - Target months: ['2025-06']
+2025-07-18 11:09:09,439 - INFO - Output directory: JPX_Processing_Output
+2025-07-18 11:09:09,439 - INFO - Download retries: 3
+2025-07-18 11:09:09,439 - INFO - Parse retries: 2
+2025-07-18 11:09:09,439 - INFO - ============================================================
+2025-07-18 11:09:09,440 - INFO - 🎯 Single month processing: 2025-06
+2025-07-18 11:09:09,440 - INFO - ============================================================
+2025-07-18 11:09:09,440 - INFO - 🚀 PROCESSING MONTH: 2025-06
+2025-07-18 11:09:09,440 - INFO - ============================================================
+2025-07-18 11:09:09,441 - INFO - 📥 PHASE 1: DOWNLOADING DATA
+2025-07-18 11:09:09,441 - INFO - 📥 Starting download for month: 2025-06
+2025-07-18 11:09:09,442 - INFO - 🔄 Data download for 2025-06 - Attempt 1/3
+2025-07-18 11:10:30,402 - INFO - ✅ Data download for 2025-06 - Success on attempt 1
+2025-07-18 11:10:30,403 - INFO - ✅ Download completed for 2025-06
+2025-07-18 11:10:35,403 - INFO - 🔍 PHASE 2: PARSING DATA
+2025-07-18 11:10:35,403 - INFO - 🔍 Starting parsing for month: 2025-06
+2025-07-18 11:10:35,405 - INFO - 📁 Preparing parser input for 2025-06
+2025-07-18 11:10:35,439 - INFO - ✅ Prepared 6 files for parsing: ['etf_m2506.xls', 'reit_m2506.xls', 'etf_m2506.xls', 'reit_m2506.xls', 'etf_m2506.xls', 'reit_m2506.xls']
+2025-07-18 11:10:35,440 - INFO - 🔄 Data parsing for 2025-06 - Attempt 1/2
+2025-07-18 11:10:39,221 - INFO - ✅ Data parsing for 2025-06 - Success on attempt 1
+2025-07-18 11:10:39,223 - INFO - ✅ Parsing completed for 2025-06
+2025-07-18 11:10:39,224 - INFO - 📄 Generated files: ['JTMD_DATA_20250718.csv', 'JTMD_20250718.zip']
+2025-07-18 11:10:41,227 - INFO - 📋 PHASE 3: VALIDATING OUTPUT
+2025-07-18 11:10:41,227 - INFO - 📋 Validation disabled for 2025-06
+2025-07-18 11:10:41,228 - INFO - ============================================================
+2025-07-18 11:10:41,229 - INFO - ✅ MONTH 2025-06 PROCESSING COMPLETE!
+2025-07-18 11:10:41,229 - INFO - ⏱️ Total processing time: 91.8 seconds
+2025-07-18 11:10:41,230 - INFO - ============================================================
+2025-07-18 11:18:50,715 - INFO - Loaded processing state: 1 records
+2025-07-18 11:18:50,715 - INFO - ============================================================
+2025-07-18 11:18:50,716 - INFO - JPX Master Data Processor Initialized
+2025-07-18 11:18:50,716 - INFO - ============================================================
+2025-07-18 11:18:50,716 - INFO - Target months: ['2025-06']
+2025-07-18 11:18:50,716 - INFO - Output directory: JPX_Processing_Output
+2025-07-18 11:18:50,717 - INFO - Download retries: 3
+2025-07-18 11:18:50,717 - INFO - Parse retries: 2
+2025-07-18 11:18:50,717 - INFO - ============================================================
+2025-07-18 11:18:50,717 - INFO - 🎯 Single month processing: 2025-05
+2025-07-18 11:18:50,718 - INFO - ============================================================
+2025-07-18 11:18:50,718 - INFO - 🚀 PROCESSING MONTH: 2025-05
+2025-07-18 11:18:50,718 - INFO - ============================================================
+2025-07-18 11:18:50,718 - INFO - 📥 PHASE 1: DOWNLOADING DATA
+2025-07-18 11:18:50,719 - INFO - 📥 Starting download for month: 2025-05
+2025-07-18 11:18:50,720 - INFO - 🔄 Data download for 2025-05 - Attempt 1/3
+2025-07-18 11:20:06,500 - INFO - ✅ Data download for 2025-05 - Success on attempt 1
+2025-07-18 11:20:06,502 - INFO - ✅ Download completed for 2025-05
+2025-07-18 11:20:11,505 - INFO - 🔍 PHASE 2: PARSING DATA
+2025-07-18 11:20:11,506 - INFO - 🔍 Starting parsing for month: 2025-05
+2025-07-18 11:20:11,510 - INFO - 📁 Preparing parser input for 2025-05
+2025-07-18 11:20:11,549 - INFO - ✅ Prepared 6 files for parsing: ['etf_m2505.xls', 'reit_m2505.xls', 'etf_m2505.xls', 'reit_m2505.xls', 'etf_m2505.xls', 'reit_m2505.xls']
+2025-07-18 11:20:11,554 - INFO - 🔄 Data parsing for 2025-05 - Attempt 1/2
+2025-07-18 11:20:12,987 - INFO - ✅ Data parsing for 2025-05 - Success on attempt 1
+2025-07-18 11:20:12,990 - INFO - ✅ Parsing completed for 2025-05
+2025-07-18 11:20:12,992 - INFO - 📄 Generated files: ['JTMD_DATA_20250718.csv', 'JTMD_20250718.zip']
+2025-07-18 11:20:14,995 - INFO - 📋 PHASE 3: VALIDATING OUTPUT
+2025-07-18 11:20:14,996 - INFO - 📋 Validation disabled for 2025-05
+2025-07-18 11:20:14,999 - INFO - ============================================================
+2025-07-18 11:20:15,003 - INFO - ✅ MONTH 2025-05 PROCESSING COMPLETE!
+2025-07-18 11:20:15,005 - INFO - ⏱️ Total processing time: 84.3 seconds
+2025-07-18 11:20:15,007 - INFO - ============================================================

@@ -1,0 +1,120 @@
+2025-07-18 11:10:38,889 - INFO - Adaptive JTMD Extractor initialized
+2025-07-18 11:10:38,889 - INFO - Input: JPX_Processing_Output\2025-06\parser_input, Output: JPX_Processing_Output\2025-06\parser_output
+2025-07-18 11:10:38,890 - INFO - Total mappings: 84 data points
+2025-07-18 11:10:38,890 - INFO - ============================================================
+2025-07-18 11:10:38,890 - INFO - 🧠 Adaptive JTMD Excel Extractor Started
+2025-07-18 11:10:38,890 - INFO - ============================================================
+2025-07-18 11:10:38,890 - INFO - Found 2 Excel files in JPX_Processing_Output\2025-06\parser_input
+2025-07-18 11:10:38,891 - INFO -   - etf_m2506.xls
+2025-07-18 11:10:38,892 - INFO -   - reit_m2506.xls
+2025-07-18 11:10:38,892 - INFO - 📁 Processing: etf_m2506.xls
+2025-07-18 11:10:38,932 - INFO - Available sheets: ['Volume', 'Value']
+2025-07-18 11:10:38,956 - INFO - 🧠 Adaptive extraction for ETF
+2025-07-18 11:10:38,956 - INFO - Data sheet: 78 rows × 11 cols
+2025-07-18 11:10:38,956 - INFO - 📍 Fixed coordinates: 28 data points
+2025-07-18 11:10:38,956 - INFO - 🎯 Dynamic balance: 14 data points
+2025-07-18 11:10:38,956 - INFO - 📊 ETF extraction: 42/42 (100.0%)
+2025-07-18 11:10:38,956 - INFO - Sample ETF data:
+2025-07-18 11:10:38,956 - INFO -   JTMD.ETF.SAL.PROP.M: 138,921,815
+2025-07-18 11:10:38,957 - INFO -   JTMD.ETF.SAL.BROKER.M: 4,844,679,157
+2025-07-18 11:10:38,957 - INFO -   JTMD.ETF.SAL.TOT.M: 4,983,600,972
+2025-07-18 11:10:38,957 - INFO - ✅ Extracted 42 ETF data points
+2025-07-18 11:10:38,957 - INFO - ✅ Successfully processed etf_m2506.xls - Period: 2025-06, Data points: 42
+2025-07-18 11:10:38,957 - INFO - 📁 Processing: reit_m2506.xls
+2025-07-18 11:10:38,982 - INFO - Available sheets: ['Volume', 'Value']
+2025-07-18 11:10:38,994 - INFO - 🧠 Adaptive extraction for REIT
+2025-07-18 11:10:38,994 - INFO - Data sheet: 78 rows × 11 cols
+2025-07-18 11:10:38,994 - INFO - 📍 Fixed coordinates: 28 data points
+2025-07-18 11:10:38,994 - INFO - 🎯 Dynamic balance: 14 data points
+2025-07-18 11:10:38,994 - INFO - 📊 REIT extraction: 42/42 (100.0%)
+2025-07-18 11:10:38,994 - INFO - Sample REIT data:
+2025-07-18 11:10:38,994 - INFO -   JTMD.REIT.SAL.PROP.M: 245,545,339
+2025-07-18 11:10:38,995 - INFO -   JTMD.REIT.SAL.BROKER.M: 790,338,680
+2025-07-18 11:10:38,995 - INFO -   JTMD.REIT.SAL.TOT.M: 1,035,884,019
+2025-07-18 11:10:38,995 - INFO - ✅ Extracted 42 REIT data points
+2025-07-18 11:10:38,995 - INFO - ✅ Successfully processed reit_m2506.xls - Period: 2025-06, Data points: 42
+2025-07-18 11:10:38,995 - INFO - 🎯 ADAPTIVE EXTRACTION SUMMARY:
+2025-07-18 11:10:38,995 - INFO -   📅 2025-06: ETF=42/42, REIT=42/42, Total=84/84 (100.0%)
+2025-07-18 11:10:38,995 - INFO - 📝 Creating output files...
+2025-07-18 11:10:38,995 - INFO - 📝 Creating CSV with 85 columns
+2025-07-18 11:10:38,997 - INFO - ✅ Created output file: JPX_Processing_Output\2025-06\parser_output\JTMD_DATA_20250718.csv
+2025-07-18 11:10:38,997 - INFO - 📊 Output has 3 rows and 85 columns
+2025-07-18 11:10:38,999 - INFO - ✅ Created metadata file: JPX_Processing_Output\2025-06\parser_output\JTMD_META_20250718.csv
+2025-07-18 11:10:39,000 - INFO - 🔍 Validating output...
+2025-07-18 11:10:39,011 - INFO - ✅ Column count correct (85)
+2025-07-18 11:10:39,012 - INFO - ✅ Row count acceptable (3 rows)
+2025-07-18 11:10:39,012 - INFO - ✅ All period formats valid
+2025-07-18 11:10:39,014 - INFO - ✅ Data completeness: 84/84 (100.0%)
+2025-07-18 11:10:39,016 - INFO - ✅ Comma formatting: 84/84 numbers (100.0%)
+2025-07-18 11:10:39,016 - INFO - 🎉 Overall validation: PASSED
+2025-07-18 11:10:39,016 - INFO - ✅ Output validation successful
+2025-07-18 11:10:39,031 - INFO - 📦 Created ZIP archive: JPX_Processing_Output\2025-06\parser_output\JTMD_20250718.zip
+2025-07-18 11:10:39,031 - INFO - ============================================================
+2025-07-18 11:10:39,031 - INFO - 🎉 Adaptive JTMD Excel Extractor - SUCCESS!
+2025-07-18 11:10:39,031 - INFO - ============================================================
+2025-07-18 11:10:39,031 - INFO - 📊 Total periods processed: 1
+2025-07-18 11:10:39,032 - INFO - 📈 Total data points extracted: 84
+2025-07-18 11:10:39,032 - INFO - 📁 Output folder: JPX_Processing_Output\2025-06\parser_output
+2025-07-18 11:10:39,032 - INFO - ============================================================
+2025-07-18 11:10:39,032 - INFO - 🧠 ADAPTIVE EXTRACTION SUMMARY:
+2025-07-18 11:10:39,032 - INFO -   📅 2025-06: ETF=42/42, REIT=42/42, Total=84/84 (100.0%)
+2025-07-18 11:20:12,699 - INFO - Adaptive JTMD Extractor initialized
+2025-07-18 11:20:12,699 - INFO - Input: JPX_Processing_Output\2025-05\parser_input, Output: JPX_Processing_Output\2025-05\parser_output
+2025-07-18 11:20:12,699 - INFO - Total mappings: 84 data points
+2025-07-18 11:20:12,699 - INFO - ============================================================
+2025-07-18 11:20:12,699 - INFO - 🧠 Adaptive JTMD Excel Extractor Started
+2025-07-18 11:20:12,700 - INFO - ============================================================
+2025-07-18 11:20:12,701 - INFO - Found 2 Excel files in JPX_Processing_Output\2025-05\parser_input
+2025-07-18 11:20:12,701 - INFO -   - etf_m2505.xls
+2025-07-18 11:20:12,701 - INFO -   - reit_m2505.xls
+2025-07-18 11:20:12,701 - INFO - 📁 Processing: etf_m2505.xls
+2025-07-18 11:20:12,744 - INFO - Available sheets: ['Volume', 'Value']
+2025-07-18 11:20:12,755 - INFO - 🧠 Adaptive extraction for ETF
+2025-07-18 11:20:12,755 - INFO - Data sheet: 78 rows × 11 cols
+2025-07-18 11:20:12,755 - INFO - 📍 Fixed coordinates: 28 data points
+2025-07-18 11:20:12,755 - INFO - 🎯 Dynamic balance: 14 data points
+2025-07-18 11:20:12,755 - INFO - 📊 ETF extraction: 42/42 (100.0%)
+2025-07-18 11:20:12,755 - INFO - Sample ETF data:
+2025-07-18 11:20:12,756 - INFO -   JTMD.ETF.SAL.PROP.M: 175,495,524
+2025-07-18 11:20:12,756 - INFO -   JTMD.ETF.SAL.BROKER.M: 4,598,324,498
+2025-07-18 11:20:12,756 - INFO -   JTMD.ETF.SAL.TOT.M: 4,773,820,022
+2025-07-18 11:20:12,756 - INFO - ✅ Extracted 42 ETF data points
+2025-07-18 11:20:12,756 - INFO - ✅ Successfully processed etf_m2505.xls - Period: 2025-05, Data points: 42
+2025-07-18 11:20:12,756 - INFO - 📁 Processing: reit_m2505.xls
+2025-07-18 11:20:12,780 - INFO - Available sheets: ['Volume', 'Value']
+2025-07-18 11:20:12,789 - INFO - 🧠 Adaptive extraction for REIT
+2025-07-18 11:20:12,789 - INFO - Data sheet: 78 rows × 11 cols
+2025-07-18 11:20:12,789 - INFO - 📍 Fixed coordinates: 28 data points
+2025-07-18 11:20:12,789 - INFO - 🎯 Dynamic balance: 14 data points
+2025-07-18 11:20:12,789 - INFO - 📊 REIT extraction: 42/42 (100.0%)
+2025-07-18 11:20:12,789 - INFO - Sample REIT data:
+2025-07-18 11:20:12,789 - INFO -   JTMD.REIT.SAL.PROP.M: 185,300,003
+2025-07-18 11:20:12,789 - INFO -   JTMD.REIT.SAL.BROKER.M: 711,459,178
+2025-07-18 11:20:12,789 - INFO -   JTMD.REIT.SAL.TOT.M: 896,759,181
+2025-07-18 11:20:12,789 - INFO - ✅ Extracted 42 REIT data points
+2025-07-18 11:20:12,790 - INFO - ✅ Successfully processed reit_m2505.xls - Period: 2025-05, Data points: 42
+2025-07-18 11:20:12,790 - INFO - 🎯 ADAPTIVE EXTRACTION SUMMARY:
+2025-07-18 11:20:12,790 - INFO -   📅 2025-05: ETF=42/42, REIT=42/42, Total=84/84 (100.0%)
+2025-07-18 11:20:12,790 - INFO - 📝 Creating output files...
+2025-07-18 11:20:12,790 - INFO - 📝 Creating CSV with 85 columns
+2025-07-18 11:20:12,791 - INFO - ✅ Created output file: JPX_Processing_Output\2025-05\parser_output\JTMD_DATA_20250718.csv
+2025-07-18 11:20:12,791 - INFO - 📊 Output has 3 rows and 85 columns
+2025-07-18 11:20:12,794 - INFO - ✅ Created metadata file: JPX_Processing_Output\2025-05\parser_output\JTMD_META_20250718.csv
+2025-07-18 11:20:12,794 - INFO - 🔍 Validating output...
+2025-07-18 11:20:12,812 - INFO - ✅ Column count correct (85)
+2025-07-18 11:20:12,813 - INFO - ✅ Row count acceptable (3 rows)
+2025-07-18 11:20:12,813 - INFO - ✅ All period formats valid
+2025-07-18 11:20:12,815 - INFO - ✅ Data completeness: 84/84 (100.0%)
+2025-07-18 11:20:12,817 - INFO - ✅ Comma formatting: 84/84 numbers (100.0%)
+2025-07-18 11:20:12,818 - INFO - 🎉 Overall validation: PASSED
+2025-07-18 11:20:12,818 - INFO - ✅ Output validation successful
+2025-07-18 11:20:12,831 - INFO - 📦 Created ZIP archive: JPX_Processing_Output\2025-05\parser_output\JTMD_20250718.zip
+2025-07-18 11:20:12,831 - INFO - ============================================================
+2025-07-18 11:20:12,831 - INFO - 🎉 Adaptive JTMD Excel Extractor - SUCCESS!
+2025-07-18 11:20:12,831 - INFO - ============================================================
+2025-07-18 11:20:12,831 - INFO - 📊 Total periods processed: 1
+2025-07-18 11:20:12,831 - INFO - 📈 Total data points extracted: 84
+2025-07-18 11:20:12,832 - INFO - 📁 Output folder: JPX_Processing_Output\2025-05\parser_output
+2025-07-18 11:20:12,832 - INFO - ============================================================
+2025-07-18 11:20:12,832 - INFO - 🧠 ADAPTIVE EXTRACTION SUMMARY:
+2025-07-18 11:20:12,832 - INFO -   📅 2025-05: ETF=42/42, REIT=42/42, Total=84/84 (100.0%)
