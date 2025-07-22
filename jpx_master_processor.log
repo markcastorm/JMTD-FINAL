@@ -1,63 +1,283 @@
-2025-07-18 11:09:09,437 - INFO - ============================================================
-2025-07-18 11:09:09,437 - INFO - JPX Master Data Processor Initialized
-2025-07-18 11:09:09,438 - INFO - ============================================================
-2025-07-18 11:09:09,438 - INFO - Target months: ['2025-06']
-2025-07-18 11:09:09,439 - INFO - Output directory: JPX_Processing_Output
-2025-07-18 11:09:09,439 - INFO - Download retries: 3
-2025-07-18 11:09:09,439 - INFO - Parse retries: 2
-2025-07-18 11:09:09,439 - INFO - ============================================================
-2025-07-18 11:09:09,440 - INFO - 🎯 Single month processing: 2025-06
-2025-07-18 11:09:09,440 - INFO - ============================================================
-2025-07-18 11:09:09,440 - INFO - 🚀 PROCESSING MONTH: 2025-06
-2025-07-18 11:09:09,440 - INFO - ============================================================
-2025-07-18 11:09:09,441 - INFO - 📥 PHASE 1: DOWNLOADING DATA
-2025-07-18 11:09:09,441 - INFO - 📥 Starting download for month: 2025-06
-2025-07-18 11:09:09,442 - INFO - 🔄 Data download for 2025-06 - Attempt 1/3
-2025-07-18 11:10:30,402 - INFO - ✅ Data download for 2025-06 - Success on attempt 1
-2025-07-18 11:10:30,403 - INFO - ✅ Download completed for 2025-06
-2025-07-18 11:10:35,403 - INFO - 🔍 PHASE 2: PARSING DATA
-2025-07-18 11:10:35,403 - INFO - 🔍 Starting parsing for month: 2025-06
-2025-07-18 11:10:35,405 - INFO - 📁 Preparing parser input for 2025-06
-2025-07-18 11:10:35,439 - INFO - ✅ Prepared 6 files for parsing: ['etf_m2506.xls', 'reit_m2506.xls', 'etf_m2506.xls', 'reit_m2506.xls', 'etf_m2506.xls', 'reit_m2506.xls']
-2025-07-18 11:10:35,440 - INFO - 🔄 Data parsing for 2025-06 - Attempt 1/2
-2025-07-18 11:10:39,221 - INFO - ✅ Data parsing for 2025-06 - Success on attempt 1
-2025-07-18 11:10:39,223 - INFO - ✅ Parsing completed for 2025-06
-2025-07-18 11:10:39,224 - INFO - 📄 Generated files: ['JTMD_DATA_20250718.csv', 'JTMD_20250718.zip']
-2025-07-18 11:10:41,227 - INFO - 📋 PHASE 3: VALIDATING OUTPUT
-2025-07-18 11:10:41,227 - INFO - 📋 Validation disabled for 2025-06
-2025-07-18 11:10:41,228 - INFO - ============================================================
-2025-07-18 11:10:41,229 - INFO - ✅ MONTH 2025-06 PROCESSING COMPLETE!
-2025-07-18 11:10:41,229 - INFO - ⏱️ Total processing time: 91.8 seconds
-2025-07-18 11:10:41,230 - INFO - ============================================================
-2025-07-18 11:18:50,715 - INFO - Loaded processing state: 1 records
-2025-07-18 11:18:50,715 - INFO - ============================================================
-2025-07-18 11:18:50,716 - INFO - JPX Master Data Processor Initialized
-2025-07-18 11:18:50,716 - INFO - ============================================================
-2025-07-18 11:18:50,716 - INFO - Target months: ['2025-06']
-2025-07-18 11:18:50,716 - INFO - Output directory: JPX_Processing_Output
-2025-07-18 11:18:50,717 - INFO - Download retries: 3
-2025-07-18 11:18:50,717 - INFO - Parse retries: 2
-2025-07-18 11:18:50,717 - INFO - ============================================================
-2025-07-18 11:18:50,717 - INFO - 🎯 Single month processing: 2025-05
-2025-07-18 11:18:50,718 - INFO - ============================================================
-2025-07-18 11:18:50,718 - INFO - 🚀 PROCESSING MONTH: 2025-05
-2025-07-18 11:18:50,718 - INFO - ============================================================
-2025-07-18 11:18:50,718 - INFO - 📥 PHASE 1: DOWNLOADING DATA
-2025-07-18 11:18:50,719 - INFO - 📥 Starting download for month: 2025-05
-2025-07-18 11:18:50,720 - INFO - 🔄 Data download for 2025-05 - Attempt 1/3
-2025-07-18 11:20:06,500 - INFO - ✅ Data download for 2025-05 - Success on attempt 1
-2025-07-18 11:20:06,502 - INFO - ✅ Download completed for 2025-05
-2025-07-18 11:20:11,505 - INFO - 🔍 PHASE 2: PARSING DATA
-2025-07-18 11:20:11,506 - INFO - 🔍 Starting parsing for month: 2025-05
-2025-07-18 11:20:11,510 - INFO - 📁 Preparing parser input for 2025-05
-2025-07-18 11:20:11,549 - INFO - ✅ Prepared 6 files for parsing: ['etf_m2505.xls', 'reit_m2505.xls', 'etf_m2505.xls', 'reit_m2505.xls', 'etf_m2505.xls', 'reit_m2505.xls']
-2025-07-18 11:20:11,554 - INFO - 🔄 Data parsing for 2025-05 - Attempt 1/2
-2025-07-18 11:20:12,987 - INFO - ✅ Data parsing for 2025-05 - Success on attempt 1
-2025-07-18 11:20:12,990 - INFO - ✅ Parsing completed for 2025-05
-2025-07-18 11:20:12,992 - INFO - 📄 Generated files: ['JTMD_DATA_20250718.csv', 'JTMD_20250718.zip']
-2025-07-18 11:20:14,995 - INFO - 📋 PHASE 3: VALIDATING OUTPUT
-2025-07-18 11:20:14,996 - INFO - 📋 Validation disabled for 2025-05
-2025-07-18 11:20:14,999 - INFO - ============================================================
-2025-07-18 11:20:15,003 - INFO - ✅ MONTH 2025-05 PROCESSING COMPLETE!
-2025-07-18 11:20:15,005 - INFO - ⏱️ Total processing time: 84.3 seconds
-2025-07-18 11:20:15,007 - INFO - ============================================================
+2025-07-22 12:03:48,111 - INFO - ============================================================
+2025-07-22 12:03:48,111 - INFO - JPX Master Data Processor Initialized
+2025-07-22 12:03:48,112 - INFO - ============================================================
+2025-07-22 12:03:48,112 - INFO - Target months: ['2025-06']
+2025-07-22 12:03:48,112 - INFO - Output directory: JPX_Processing_Output
+2025-07-22 12:03:48,113 - INFO - Download retries: 3
+2025-07-22 12:03:48,113 - INFO - Parse retries: 2
+2025-07-22 12:03:48,113 - INFO - ============================================================
+2025-07-22 12:03:48,113 - INFO - 🎯 Single month processing: 2025-06
+2025-07-22 12:03:48,113 - INFO - ============================================================
+2025-07-22 12:03:48,113 - INFO - 🚀 PROCESSING MONTH: 2025-06
+2025-07-22 12:03:48,113 - INFO - ============================================================
+2025-07-22 12:03:48,114 - INFO - 📥 PHASE 1: DOWNLOADING DATA
+2025-07-22 12:03:48,114 - INFO - 📥 Starting download for month: 2025-06
+2025-07-22 12:03:48,115 - DEBUG - Processing state saved
+2025-07-22 12:03:48,115 - INFO - 🔄 Data download for 2025-06 - Attempt 1/3
+2025-07-22 12:03:48,116 - DEBUG - Command: C:\Users\Mark Castro\AppData\Local\Programs\Python\Python312\python.exe final.py
+2025-07-22 12:05:08,216 - INFO - ✅ Data download for 2025-06 - Success on attempt 1
+2025-07-22 12:05:08,218 - DEBUG - Processing state saved
+2025-07-22 12:05:08,219 - INFO - ✅ Download completed for 2025-06
+2025-07-22 12:05:13,220 - INFO - 🔍 PHASE 2: PARSING DATA
+2025-07-22 12:05:13,222 - INFO - 🔍 Starting parsing for month: 2025-06
+2025-07-22 12:05:13,226 - DEBUG - Processing state saved
+2025-07-22 12:05:13,228 - INFO - 📁 Preparing parser input for 2025-06
+2025-07-22 12:05:13,232 - INFO - 🔍 Searching for files matching month 2025-06 (year=2025, month=06)
+2025-07-22 12:05:13,235 - INFO - 📂 Complete download directory structure:
+2025-07-22 12:05:13,242 - INFO -   📁 2025/
+2025-07-22 12:05:13,246 - INFO -   📁 2025\01_January/
+2025-07-22 12:05:13,248 - INFO -   📁 2025\02_February/
+2025-07-22 12:05:13,249 - INFO -   📁 2025\03_March/
+2025-07-22 12:05:13,251 - INFO -   📁 2025\04_April/
+2025-07-22 12:05:13,252 - INFO -   📁 2025\05_May/
+2025-07-22 12:05:13,254 - INFO -   📁 2025\06_June/
+2025-07-22 12:05:13,256 - INFO -   📄 2025\01_January\etf_m2501.xls
+2025-07-22 12:05:13,257 - INFO -   📄 2025\01_January\reit_m2501.xls
+2025-07-22 12:05:13,258 - INFO -   📄 2025\02_February\etf_m2502.xls
+2025-07-22 12:05:13,259 - INFO -   📄 2025\02_February\reit_m2502.xls
+2025-07-22 12:05:13,262 - INFO -   📄 2025\03_March\etf_m2503.xls
+2025-07-22 12:05:13,278 - INFO -   📄 2025\03_March\reit_m2503.xls
+2025-07-22 12:05:13,280 - INFO -   📄 2025\04_April\etf_m2504.xls
+2025-07-22 12:05:13,282 - INFO -   📄 2025\04_April\reit_m2504.xls
+2025-07-22 12:05:13,286 - INFO -   📄 2025\05_May\etf_m2505.xls
+2025-07-22 12:05:13,288 - INFO -   📄 2025\05_May\reit_m2505.xls
+2025-07-22 12:05:13,293 - INFO -   📄 2025\06_June\etf_m2506.xls
+2025-07-22 12:05:13,298 - INFO -   📄 2025\06_June\reit_m2506.xls
+2025-07-22 12:05:13,300 - DEBUG - 🔍 Searching in year folder: JPX_Monthly_Reports\2025
+2025-07-22 12:05:13,300 - DEBUG -   🔍 Trying pattern: 06_*
+2025-07-22 12:05:13,302 - DEBUG -     📁 Checking folder: JPX_Monthly_Reports\2025\06_June
+2025-07-22 12:05:13,310 - INFO -     ✅ Copied: etf_m2506.xls from JPX_Monthly_Reports\2025\06_June
+2025-07-22 12:05:13,312 - INFO -     ✅ Copied: reit_m2506.xls from JPX_Monthly_Reports\2025\06_June
+2025-07-22 12:05:13,313 - DEBUG -   🔍 Trying pattern: *_06_*
+2025-07-22 12:05:13,314 - DEBUG -   🔍 Trying pattern: *06*
+2025-07-22 12:05:13,315 - DEBUG -     📁 Checking folder: JPX_Monthly_Reports\2025\06_June
+2025-07-22 12:05:13,317 - DEBUG -   🔍 Trying pattern: *06*
+2025-07-22 12:05:13,318 - DEBUG -     📁 Checking folder: JPX_Monthly_Reports\2025\06_June
+2025-07-22 12:05:13,319 - DEBUG -   🔍 Trying pattern: *
+2025-07-22 12:05:13,321 - DEBUG -     📁 Checking folder: JPX_Monthly_Reports\2025\01_January
+2025-07-22 12:05:13,323 - DEBUG -     📁 Checking folder: JPX_Monthly_Reports\2025\02_February
+2025-07-22 12:05:13,327 - DEBUG -     📁 Checking folder: JPX_Monthly_Reports\2025\03_March
+2025-07-22 12:05:13,328 - DEBUG -     📁 Checking folder: JPX_Monthly_Reports\2025\04_April
+2025-07-22 12:05:13,329 - DEBUG -     📁 Checking folder: JPX_Monthly_Reports\2025\05_May
+2025-07-22 12:05:13,330 - DEBUG -     📁 Checking folder: JPX_Monthly_Reports\2025\06_June
+2025-07-22 12:05:13,331 - DEBUG - 🔍 Searching in year folder: JPX_Monthly_Reports\2025
+2025-07-22 12:05:13,332 - DEBUG -   🔍 Trying pattern: 06_*
+2025-07-22 12:05:13,334 - DEBUG -     📁 Checking folder: JPX_Monthly_Reports\2025\06_June
+2025-07-22 12:05:13,335 - DEBUG -   🔍 Trying pattern: *_06_*
+2025-07-22 12:05:13,335 - DEBUG -   🔍 Trying pattern: *06*
+2025-07-22 12:05:13,336 - DEBUG -     📁 Checking folder: JPX_Monthly_Reports\2025\06_June
+2025-07-22 12:05:13,336 - DEBUG -   🔍 Trying pattern: *06*
+2025-07-22 12:05:13,338 - DEBUG -     📁 Checking folder: JPX_Monthly_Reports\2025\06_June
+2025-07-22 12:05:13,344 - DEBUG -   🔍 Trying pattern: *
+2025-07-22 12:05:13,345 - DEBUG -     📁 Checking folder: JPX_Monthly_Reports\2025\01_January
+2025-07-22 12:05:13,345 - DEBUG -     📁 Checking folder: JPX_Monthly_Reports\2025\02_February
+2025-07-22 12:05:13,346 - DEBUG -     📁 Checking folder: JPX_Monthly_Reports\2025\03_March
+2025-07-22 12:05:13,348 - DEBUG -     📁 Checking folder: JPX_Monthly_Reports\2025\04_April
+2025-07-22 12:05:13,349 - DEBUG -     📁 Checking folder: JPX_Monthly_Reports\2025\05_May
+2025-07-22 12:05:13,350 - DEBUG -     📁 Checking folder: JPX_Monthly_Reports\2025\06_June
+2025-07-22 12:05:13,351 - DEBUG - 🔍 Searching directly in year folder: JPX_Monthly_Reports\2025
+2025-07-22 12:05:13,352 - DEBUG - 🔍 Searching directly in year folder: JPX_Monthly_Reports\2025
+2025-07-22 12:05:13,352 - DEBUG - 🔍 Recursive search for pattern: m2506
+2025-07-22 12:05:13,356 - INFO - ✅ Successfully prepared 2 unique files for parsing:
+2025-07-22 12:05:13,356 - INFO -   📄 etf_m2506.xls
+2025-07-22 12:05:13,360 - INFO -   📄 reit_m2506.xls
+2025-07-22 12:05:13,361 - INFO - 🔄 Data parsing for 2025-06 - Attempt 1/2
+2025-07-22 12:05:13,362 - DEBUG - Command: C:\Users\Mark Castro\AppData\Local\Programs\Python\Python312\python.exe jtmd_scraper5.py --input JPX_Processing_Output\2025-06\parser_input --output JPX_Processing_Output\2025-06\parser_output
+2025-07-22 12:05:18,047 - INFO - ✅ Data parsing for 2025-06 - Success on attempt 1
+2025-07-22 12:05:18,051 - DEBUG - Processing state saved
+2025-07-22 12:05:18,063 - INFO - ✅ Parsing completed for 2025-06
+2025-07-22 12:05:18,064 - INFO - 📄 Generated files: ['JTMD_DATA_20250722.csv', 'JTMD_20250722.zip']
+2025-07-22 12:05:20,066 - INFO - 📋 PHASE 3: VALIDATING OUTPUT
+2025-07-22 12:05:20,068 - INFO - 📋 Validation disabled for 2025-06
+2025-07-22 12:05:20,072 - DEBUG - Processing state saved
+2025-07-22 12:05:20,074 - INFO - ============================================================
+2025-07-22 12:05:20,077 - INFO - ✅ MONTH 2025-06 PROCESSING COMPLETE!
+2025-07-22 12:05:20,079 - INFO - ⏱️ Total processing time: 92.0 seconds
+2025-07-22 12:05:20,080 - INFO - ============================================================
+2025-07-22 12:07:27,711 - INFO - Loaded processing state: 1 records
+2025-07-22 12:07:27,711 - INFO - ============================================================
+2025-07-22 12:07:27,712 - INFO - JPX Master Data Processor Initialized
+2025-07-22 12:07:27,712 - INFO - ============================================================
+2025-07-22 12:07:27,712 - INFO - Target months: ['2025-06']
+2025-07-22 12:07:27,713 - INFO - Output directory: JPX_Processing_Output
+2025-07-22 12:07:27,713 - INFO - Download retries: 3
+2025-07-22 12:07:27,713 - INFO - Parse retries: 2
+2025-07-22 12:07:27,713 - INFO - ============================================================
+2025-07-22 12:07:27,713 - INFO - 🎯 Single month processing: 2025-07
+2025-07-22 12:07:27,714 - INFO - ============================================================
+2025-07-22 12:07:27,714 - INFO - 🚀 PROCESSING MONTH: 2025-07
+2025-07-22 12:07:27,714 - INFO - ============================================================
+2025-07-22 12:07:27,714 - INFO - 📥 PHASE 1: DOWNLOADING DATA
+2025-07-22 12:07:27,715 - INFO - 📥 Starting download for month: 2025-07
+2025-07-22 12:07:27,716 - DEBUG - Processing state saved
+2025-07-22 12:07:27,717 - INFO - 🔄 Data download for 2025-07 - Attempt 1/3
+2025-07-22 12:07:27,717 - DEBUG - Command: C:\Users\Mark Castro\AppData\Local\Programs\Python\Python312\python.exe final.py
+2025-07-22 12:08:43,075 - INFO - ✅ Data download for 2025-07 - Success on attempt 1
+2025-07-22 12:08:43,077 - DEBUG - Processing state saved
+2025-07-22 12:08:43,077 - INFO - ✅ Download completed for 2025-07
+2025-07-22 12:08:48,079 - INFO - 🔍 PHASE 2: PARSING DATA
+2025-07-22 12:08:48,080 - INFO - 🔍 Starting parsing for month: 2025-07
+2025-07-22 12:08:48,085 - DEBUG - Processing state saved
+2025-07-22 12:08:48,086 - INFO - 📁 Preparing parser input for 2025-07
+2025-07-22 12:08:48,096 - INFO - 🔍 Searching for files matching month 2025-07 (year=2025, month=07)
+2025-07-22 12:08:48,100 - INFO - 📂 Complete download directory structure:
+2025-07-22 12:08:48,109 - INFO -   📁 2025/
+2025-07-22 12:08:48,112 - INFO -   📁 2025\01_January/
+2025-07-22 12:08:48,114 - INFO -   📁 2025\02_February/
+2025-07-22 12:08:48,117 - INFO -   📁 2025\03_March/
+2025-07-22 12:08:48,123 - INFO -   📁 2025\04_April/
+2025-07-22 12:08:48,126 - INFO -   📁 2025\05_May/
+2025-07-22 12:08:48,129 - INFO -   📁 2025\06_June/
+2025-07-22 12:08:48,132 - INFO -   📄 2025\01_January\etf_m2501.xls
+2025-07-22 12:08:48,134 - INFO -   📄 2025\01_January\reit_m2501.xls
+2025-07-22 12:08:48,135 - INFO -   📄 2025\02_February\etf_m2502.xls
+2025-07-22 12:08:48,139 - INFO -   📄 2025\02_February\reit_m2502.xls
+2025-07-22 12:08:48,144 - INFO -   📄 2025\03_March\etf_m2503.xls
+2025-07-22 12:08:48,146 - INFO -   📄 2025\03_March\reit_m2503.xls
+2025-07-22 12:08:48,147 - INFO -   📄 2025\04_April\etf_m2504.xls
+2025-07-22 12:08:48,149 - INFO -   📄 2025\04_April\reit_m2504.xls
+2025-07-22 12:08:48,150 - INFO -   📄 2025\05_May\etf_m2505.xls
+2025-07-22 12:08:48,151 - INFO -   📄 2025\05_May\reit_m2505.xls
+2025-07-22 12:08:48,153 - INFO -   📄 2025\06_June\etf_m2506.xls
+2025-07-22 12:08:48,157 - INFO -   📄 2025\06_June\reit_m2506.xls
+2025-07-22 12:08:48,162 - DEBUG - 🔍 Searching in year folder: JPX_Monthly_Reports\2025
+2025-07-22 12:08:48,163 - DEBUG -   🔍 Trying pattern: 07_*
+2025-07-22 12:08:48,165 - DEBUG -   🔍 Trying pattern: *_07_*
+2025-07-22 12:08:48,166 - DEBUG -   🔍 Trying pattern: *07*
+2025-07-22 12:08:48,168 - DEBUG -   🔍 Trying pattern: *07*
+2025-07-22 12:08:48,169 - DEBUG -   🔍 Trying pattern: *
+2025-07-22 12:08:48,172 - DEBUG -     📁 Checking folder: JPX_Monthly_Reports\2025\01_January
+2025-07-22 12:08:48,174 - DEBUG -     📁 Checking folder: JPX_Monthly_Reports\2025\02_February
+2025-07-22 12:08:48,175 - DEBUG -     📁 Checking folder: JPX_Monthly_Reports\2025\03_March
+2025-07-22 12:08:48,176 - DEBUG -     📁 Checking folder: JPX_Monthly_Reports\2025\04_April
+2025-07-22 12:08:48,177 - DEBUG -     📁 Checking folder: JPX_Monthly_Reports\2025\05_May
+2025-07-22 12:08:48,178 - DEBUG -     📁 Checking folder: JPX_Monthly_Reports\2025\06_June
+2025-07-22 12:08:48,179 - DEBUG - 🔍 Searching in year folder: JPX_Monthly_Reports\2025
+2025-07-22 12:08:48,180 - DEBUG -   🔍 Trying pattern: 07_*
+2025-07-22 12:08:48,180 - DEBUG -   🔍 Trying pattern: *_07_*
+2025-07-22 12:08:48,181 - DEBUG -   🔍 Trying pattern: *07*
+2025-07-22 12:08:48,182 - DEBUG -   🔍 Trying pattern: *07*
+2025-07-22 12:08:48,183 - DEBUG -   🔍 Trying pattern: *
+2025-07-22 12:08:48,184 - DEBUG -     📁 Checking folder: JPX_Monthly_Reports\2025\01_January
+2025-07-22 12:08:48,185 - DEBUG -     📁 Checking folder: JPX_Monthly_Reports\2025\02_February
+2025-07-22 12:08:48,186 - DEBUG -     📁 Checking folder: JPX_Monthly_Reports\2025\03_March
+2025-07-22 12:08:48,188 - DEBUG -     📁 Checking folder: JPX_Monthly_Reports\2025\04_April
+2025-07-22 12:08:48,189 - DEBUG -     📁 Checking folder: JPX_Monthly_Reports\2025\05_May
+2025-07-22 12:08:48,193 - DEBUG -     📁 Checking folder: JPX_Monthly_Reports\2025\06_June
+2025-07-22 12:08:48,195 - DEBUG - 🔍 Searching directly in year folder: JPX_Monthly_Reports\2025
+2025-07-22 12:08:48,195 - DEBUG - 🔍 Searching directly in year folder: JPX_Monthly_Reports\2025
+2025-07-22 12:08:48,196 - DEBUG - 🔍 Recursive search for pattern: m2507
+2025-07-22 12:08:48,200 - WARNING - ⚠️ No files found for 2025-07
+2025-07-22 12:08:48,200 - WARNING - 🔍 Expected pattern: files containing 'm2507'
+2025-07-22 12:08:48,202 - INFO - 📄 Available Excel files found:
+2025-07-22 12:08:48,202 - INFO -   📄 2025\01_January\etf_m2501.xls
+2025-07-22 12:08:48,203 - INFO -   📄 2025\01_January\reit_m2501.xls
+2025-07-22 12:08:48,203 - INFO -   📄 2025\02_February\etf_m2502.xls
+2025-07-22 12:08:48,207 - INFO -   📄 2025\02_February\reit_m2502.xls
+2025-07-22 12:08:48,209 - INFO -   📄 2025\03_March\etf_m2503.xls
+2025-07-22 12:08:48,210 - INFO -   📄 2025\03_March\reit_m2503.xls
+2025-07-22 12:08:48,211 - INFO -   📄 2025\04_April\etf_m2504.xls
+2025-07-22 12:08:48,212 - INFO -   📄 2025\04_April\reit_m2504.xls
+2025-07-22 12:08:48,212 - INFO -   📄 2025\05_May\etf_m2505.xls
+2025-07-22 12:08:48,213 - INFO -   📄 2025\05_May\reit_m2505.xls
+2025-07-22 12:08:48,214 - INFO -   📄 2025\06_June\etf_m2506.xls
+2025-07-22 12:08:48,214 - INFO -   📄 2025\06_June\reit_m2506.xls
+2025-07-22 12:08:48,216 - DEBUG - Processing state saved
+2025-07-22 12:08:48,217 - ERROR - ❌ Parsing phase failed for 2025-07
+2025-07-22 12:12:16,315 - INFO - Loaded processing state: 2 records
+2025-07-22 12:12:16,315 - INFO - ============================================================
+2025-07-22 12:12:16,315 - INFO - JPX Master Data Processor Initialized
+2025-07-22 12:12:16,316 - INFO - ============================================================
+2025-07-22 12:12:16,316 - INFO - Target months: ['2025-06']
+2025-07-22 12:12:16,316 - INFO - Output directory: JPX_Processing_Output
+2025-07-22 12:12:16,317 - INFO - Download retries: 3
+2025-07-22 12:12:16,317 - INFO - Parse retries: 2
+2025-07-22 12:12:16,317 - INFO - ============================================================
+2025-07-22 12:12:16,318 - INFO - 🎯 Single month processing: 2025-05
+2025-07-22 12:12:16,318 - INFO - ============================================================
+2025-07-22 12:12:16,319 - INFO - 🚀 PROCESSING MONTH: 2025-05
+2025-07-22 12:12:16,319 - INFO - ============================================================
+2025-07-22 12:12:16,320 - INFO - 📥 PHASE 1: DOWNLOADING DATA
+2025-07-22 12:12:16,320 - INFO - 📥 Starting download for month: 2025-05
+2025-07-22 12:12:16,321 - DEBUG - Processing state saved
+2025-07-22 12:12:16,321 - INFO - 🔄 Data download for 2025-05 - Attempt 1/3
+2025-07-22 12:12:16,322 - DEBUG - Command: C:\Users\Mark Castro\AppData\Local\Programs\Python\Python312\python.exe final.py
+2025-07-22 12:13:30,721 - INFO - ✅ Data download for 2025-05 - Success on attempt 1
+2025-07-22 12:13:30,722 - DEBUG - Processing state saved
+2025-07-22 12:13:30,723 - INFO - ✅ Download completed for 2025-05
+2025-07-22 12:13:35,724 - INFO - 🔍 PHASE 2: PARSING DATA
+2025-07-22 12:13:35,725 - INFO - 🔍 Starting parsing for month: 2025-05
+2025-07-22 12:13:35,729 - DEBUG - Processing state saved
+2025-07-22 12:13:35,730 - INFO - 📁 Preparing parser input for 2025-05
+2025-07-22 12:13:35,739 - INFO - 🔍 Searching for files matching month 2025-05 (year=2025, month=05)
+2025-07-22 12:13:35,742 - INFO - 📂 Complete download directory structure:
+2025-07-22 12:13:35,746 - INFO -   📁 2025/
+2025-07-22 12:13:35,751 - INFO -   📁 2025\01_January/
+2025-07-22 12:13:35,752 - INFO -   📁 2025\02_February/
+2025-07-22 12:13:35,754 - INFO -   📁 2025\03_March/
+2025-07-22 12:13:35,756 - INFO -   📁 2025\04_April/
+2025-07-22 12:13:35,757 - INFO -   📁 2025\05_May/
+2025-07-22 12:13:35,764 - INFO -   📁 2025\06_June/
+2025-07-22 12:13:35,769 - INFO -   📄 2025\01_January\etf_m2501.xls
+2025-07-22 12:13:35,773 - INFO -   📄 2025\01_January\reit_m2501.xls
+2025-07-22 12:13:35,778 - INFO -   📄 2025\02_February\etf_m2502.xls
+2025-07-22 12:13:35,782 - INFO -   📄 2025\02_February\reit_m2502.xls
+2025-07-22 12:13:35,784 - INFO -   📄 2025\03_March\etf_m2503.xls
+2025-07-22 12:13:35,784 - INFO -   📄 2025\03_March\reit_m2503.xls
+2025-07-22 12:13:35,787 - INFO -   📄 2025\04_April\etf_m2504.xls
+2025-07-22 12:13:35,788 - INFO -   📄 2025\04_April\reit_m2504.xls
+2025-07-22 12:13:35,789 - INFO -   📄 2025\05_May\etf_m2505.xls
+2025-07-22 12:13:35,789 - INFO -   📄 2025\05_May\reit_m2505.xls
+2025-07-22 12:13:35,790 - INFO -   📄 2025\06_June\etf_m2506.xls
+2025-07-22 12:13:35,791 - INFO -   📄 2025\06_June\reit_m2506.xls
+2025-07-22 12:13:35,799 - DEBUG - 🔍 Searching in year folder: JPX_Monthly_Reports\2025
+2025-07-22 12:13:35,799 - DEBUG -   🔍 Trying pattern: 05_*
+2025-07-22 12:13:35,802 - DEBUG -     📁 Checking folder: JPX_Monthly_Reports\2025\05_May
+2025-07-22 12:13:35,805 - INFO -     ✅ Copied: etf_m2505.xls from JPX_Monthly_Reports\2025\05_May
+2025-07-22 12:13:35,808 - INFO -     ✅ Copied: reit_m2505.xls from JPX_Monthly_Reports\2025\05_May
+2025-07-22 12:13:35,814 - DEBUG -   🔍 Trying pattern: *_05_*
+2025-07-22 12:13:35,816 - DEBUG -   🔍 Trying pattern: *05*
+2025-07-22 12:13:35,818 - DEBUG -     📁 Checking folder: JPX_Monthly_Reports\2025\05_May
+2025-07-22 12:13:35,819 - DEBUG -   🔍 Trying pattern: *05*
+2025-07-22 12:13:35,820 - DEBUG -     📁 Checking folder: JPX_Monthly_Reports\2025\05_May
+2025-07-22 12:13:35,820 - DEBUG -   🔍 Trying pattern: *
+2025-07-22 12:13:35,821 - DEBUG -     📁 Checking folder: JPX_Monthly_Reports\2025\01_January
+2025-07-22 12:13:35,822 - DEBUG -     📁 Checking folder: JPX_Monthly_Reports\2025\02_February
+2025-07-22 12:13:35,823 - DEBUG -     📁 Checking folder: JPX_Monthly_Reports\2025\03_March
+2025-07-22 12:13:35,830 - DEBUG -     📁 Checking folder: JPX_Monthly_Reports\2025\04_April
+2025-07-22 12:13:35,835 - DEBUG -     📁 Checking folder: JPX_Monthly_Reports\2025\05_May
+2025-07-22 12:13:35,836 - DEBUG -     📁 Checking folder: JPX_Monthly_Reports\2025\06_June
+2025-07-22 12:13:35,837 - DEBUG - 🔍 Searching in year folder: JPX_Monthly_Reports\2025
+2025-07-22 12:13:35,838 - DEBUG -   🔍 Trying pattern: 05_*
+2025-07-22 12:13:35,839 - DEBUG -     📁 Checking folder: JPX_Monthly_Reports\2025\05_May
+2025-07-22 12:13:35,840 - DEBUG -   🔍 Trying pattern: *_05_*
+2025-07-22 12:13:35,842 - DEBUG -   🔍 Trying pattern: *05*
+2025-07-22 12:13:35,848 - DEBUG -     📁 Checking folder: JPX_Monthly_Reports\2025\05_May
+2025-07-22 12:13:35,849 - DEBUG -   🔍 Trying pattern: *05*
+2025-07-22 12:13:35,852 - DEBUG -     📁 Checking folder: JPX_Monthly_Reports\2025\05_May
+2025-07-22 12:13:35,853 - DEBUG -   🔍 Trying pattern: *
+2025-07-22 12:13:35,854 - DEBUG -     📁 Checking folder: JPX_Monthly_Reports\2025\01_January
+2025-07-22 12:13:35,854 - DEBUG -     📁 Checking folder: JPX_Monthly_Reports\2025\02_February
+2025-07-22 12:13:35,855 - DEBUG -     📁 Checking folder: JPX_Monthly_Reports\2025\03_March
+2025-07-22 12:13:35,856 - DEBUG -     📁 Checking folder: JPX_Monthly_Reports\2025\04_April
+2025-07-22 12:13:35,860 - DEBUG -     📁 Checking folder: JPX_Monthly_Reports\2025\05_May
+2025-07-22 12:13:35,863 - DEBUG -     📁 Checking folder: JPX_Monthly_Reports\2025\06_June
+2025-07-22 12:13:35,865 - DEBUG - 🔍 Searching directly in year folder: JPX_Monthly_Reports\2025
+2025-07-22 12:13:35,867 - DEBUG - 🔍 Searching directly in year folder: JPX_Monthly_Reports\2025
+2025-07-22 12:13:35,869 - DEBUG - 🔍 Recursive search for pattern: m2505
+2025-07-22 12:13:35,871 - INFO - ✅ Successfully prepared 2 unique files for parsing:
+2025-07-22 12:13:35,871 - INFO -   📄 etf_m2505.xls
+2025-07-22 12:13:35,872 - INFO -   📄 reit_m2505.xls
+2025-07-22 12:13:35,873 - INFO - 🔄 Data parsing for 2025-05 - Attempt 1/2
+2025-07-22 12:13:35,873 - DEBUG - Command: C:\Users\Mark Castro\AppData\Local\Programs\Python\Python312\python.exe jtmd_scraper5.py --input JPX_Processing_Output\2025-05\parser_input --output JPX_Processing_Output\2025-05\parser_output
+2025-07-22 12:13:39,686 - INFO - ✅ Data parsing for 2025-05 - Success on attempt 1
+2025-07-22 12:13:39,689 - DEBUG - Processing state saved
+2025-07-22 12:13:39,689 - INFO - ✅ Parsing completed for 2025-05
+2025-07-22 12:13:39,690 - INFO - 📄 Generated files: ['JTMD_DATA_20250722.csv', 'JTMD_20250722.zip']
+2025-07-22 12:13:41,691 - INFO - 📋 PHASE 3: VALIDATING OUTPUT
+2025-07-22 12:13:41,691 - INFO - 📋 Validation disabled for 2025-05
+2025-07-22 12:13:41,692 - DEBUG - Processing state saved
+2025-07-22 12:13:41,693 - INFO - ============================================================
+2025-07-22 12:13:41,693 - INFO - ✅ MONTH 2025-05 PROCESSING COMPLETE!
+2025-07-22 12:13:41,693 - INFO - ⏱️ Total processing time: 85.4 seconds
+2025-07-22 12:13:41,693 - INFO - ============================================================

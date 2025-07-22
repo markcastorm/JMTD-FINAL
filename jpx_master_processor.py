@@ -309,63 +309,114 @@ class JPXMasterProcessor:
             
             # Find files for the target month
             files_found = []
+            files_copied = set()  # Track to avoid duplicates
             
-            # Search through year folders
-            for year_folder in download_base.glob(f"{year}*"):
-                if year_folder.is_dir():
-                    logger.debug(f"Searching in year folder: {year_folder}")
-                    
-                    # Look for month folders with multiple patterns
-                    month_patterns = [
-                        f"{month_int:02d}_*",     # e.g., "06_June"
-                        f"*{month_int:02d}*",     # fallback pattern
-                        f"*{month_str}*"          # e.g., "*06*"
-                    ]
-                    
-                    for pattern in month_patterns:
-                        logger.debug(f"Searching with pattern: {pattern}")
-                        for month_folder in year_folder.glob(pattern):
-                            if month_folder.is_dir():
-                                logger.debug(f"Found month folder: {month_folder}")
-                                # Copy Excel files to parser input
-                                for excel_file in month_folder.glob("*.xls*"):
-                                    dest_file = parser_input_dir / excel_file.name
-                                    shutil.copy2(excel_file, dest_file)
-                                    files_found.append(excel_file.name)
-                                    logger.debug(f"📄 Copied: {excel_file.name}")
+            logger.info(f"🔍 Searching for files matching month {target_month} (year={year}, month={month_int:02d})")
             
-            # Also search directly in the year folder (in case files are not in month subfolders)
-            for year_folder in download_base.glob(f"{year}*"):
-                if year_folder.is_dir():
-                    for excel_file in year_folder.glob("*.xls*"):
-                        # Check if filename contains the target month pattern
-                        if f"m{year[2:]}{month_int:02d}" in excel_file.name.lower():
-                            dest_file = parser_input_dir / excel_file.name
-                            shutil.copy2(excel_file, dest_file)
-                            files_found.append(excel_file.name)
-                            logger.debug(f"📄 Copied from year folder: {excel_file.name}")
+            if not download_base.exists():
+                logger.error(f"📂 Download base directory does not exist: {download_base}")
+                return None
+            
+            # Log the complete directory structure for debugging
+            logger.info("📂 Complete download directory structure:")
+            for item in download_base.rglob("*"):
+                rel_path = item.relative_to(download_base)
+                if item.is_file():
+                    logger.info(f"  📄 {rel_path}")
+                elif item.is_dir():
+                    logger.info(f"  📁 {rel_path}/")
+            
+            # Search strategy 1: Look through year folders for month subfolders
+            year_patterns = [year, f"{year}*"]  # e.g., "2025" or "2025*"
+            
+            for year_pattern in year_patterns:
+                for year_folder in download_base.glob(year_pattern):
+                    if year_folder.is_dir():
+                        logger.debug(f"🔍 Searching in year folder: {year_folder}")
+                        
+                        # Look for month folders with multiple patterns
+                        month_patterns = [
+                            f"{month_int:02d}_*",         # e.g., "06_June"
+                            f"*_{month_int:02d}_*",       # e.g., "something_06_something"
+                            f"*{month_int:02d}*",         # fallback pattern
+                            f"*{month_str}*",             # e.g., "*06*"
+                            "*"                           # Search all subfolders as fallback
+                        ]
+                        
+                        for pattern in month_patterns:
+                            logger.debug(f"  🔍 Trying pattern: {pattern}")
+                            for month_folder in year_folder.glob(pattern):
+                                if month_folder.is_dir():
+                                    logger.debug(f"    📁 Checking folder: {month_folder}")
+                                    # Look for Excel files in this folder
+                                    for excel_file in month_folder.glob("*.xls*"):
+                                        # Check if this file matches our target month
+                                        filename = excel_file.name.lower()
+                                        month_pattern = f"m{year[2:]}{month_int:02d}"  # e.g., "m2506"
+                                        
+                                        if month_pattern in filename and excel_file.name not in files_copied:
+                                            dest_file = parser_input_dir / excel_file.name
+                                            shutil.copy2(excel_file, dest_file)
+                                            files_found.append(excel_file.name)
+                                            files_copied.add(excel_file.name)
+                                            logger.info(f"    ✅ Copied: {excel_file.name} from {month_folder}")
+            
+            # Search strategy 2: Look directly in year folders for Excel files
+            for year_pattern in year_patterns:
+                for year_folder in download_base.glob(year_pattern):
+                    if year_folder.is_dir():
+                        logger.debug(f"🔍 Searching directly in year folder: {year_folder}")
+                        for excel_file in year_folder.glob("*.xls*"):
+                            filename = excel_file.name.lower()
+                            month_pattern = f"m{year[2:]}{month_int:02d}"  # e.g., "m2506"
+                            
+                            if month_pattern in filename and excel_file.name not in files_copied:
+                                dest_file = parser_input_dir / excel_file.name
+                                shutil.copy2(excel_file, dest_file)
+                                files_found.append(excel_file.name)
+                                files_copied.add(excel_file.name)
+                                logger.info(f"    ✅ Copied: {excel_file.name} from {year_folder}")
+            
+            # Search strategy 3: Recursive search for any Excel files matching the pattern
+            logger.debug(f"🔍 Recursive search for pattern: m{year[2:]}{month_int:02d}")
+            for excel_file in download_base.rglob("*.xls*"):
+                filename = excel_file.name.lower()
+                month_pattern = f"m{year[2:]}{month_int:02d}"  # e.g., "m2506"
+                
+                if month_pattern in filename and excel_file.name not in files_copied:
+                    dest_file = parser_input_dir / excel_file.name
+                    shutil.copy2(excel_file, dest_file)
+                    files_found.append(excel_file.name)
+                    files_copied.add(excel_file.name)
+                    logger.info(f"    ✅ Copied: {excel_file.name} from {excel_file.parent}")
+            
+            # Remove duplicates and sort
+            files_found = sorted(list(set(files_found)))
             
             if files_found:
-                logger.info(f"✅ Prepared {len(files_found)} files for parsing: {files_found}")
+                logger.info(f"✅ Successfully prepared {len(files_found)} unique files for parsing:")
+                for file in files_found:
+                    logger.info(f"  📄 {file}")
                 return parser_input_dir
             else:
                 logger.warning(f"⚠️ No files found for {target_month}")
-                # Log the actual structure found for debugging
-                logger.info("📂 Available download structure:")
-                if download_base.exists():
-                    for item in download_base.rglob("*"):
-                        if item.is_file() and item.suffix.lower() in ['.xls', '.xlsx']:
-                            logger.info(f"  📄 {item.relative_to(download_base)}")
-                        elif item.is_dir():
-                            logger.info(f"  📁 {item.relative_to(download_base)}/")
+                logger.warning(f"🔍 Expected pattern: files containing 'm{year[2:]}{month_int:02d}'")
+                
+                # Show what files ARE available
+                available_files = list(download_base.rglob("*.xls*"))
+                if available_files:
+                    logger.info("📄 Available Excel files found:")
+                    for file in available_files:
+                        logger.info(f"  📄 {file.relative_to(download_base)}")
                 else:
-                    logger.warning(f"📂 Download base directory does not exist: {download_base}")
+                    logger.warning("📄 No Excel files found in download directory at all")
+                
                 return None
                 
         except Exception as e:
             logger.error(f"❌ Error preparing parser input for {target_month}: {str(e)}")
             import traceback
-            logger.debug(traceback.format_exc())
+            logger.error(traceback.format_exc())
             return None
     
     def parse_data_for_month(self, target_month: str) -> bool:
@@ -749,5 +800,4 @@ def main():
 
 if __name__ == "__main__":
     main()
-
 
